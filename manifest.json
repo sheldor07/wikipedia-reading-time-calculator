@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Wikipedia Reading Time Calculator",
+  "version": "1.0.0",
+  "description": "Calculates reading time for Wikipedia articles",
+  "icons": {
+    "16": "images/icon_16.png",
+    "32": "images/icon_32.png",
+    "128": "images/icon_128.png"
+  },
+  "content_scripts": [
+    {
+      "js": ["scripts/content.js"],
+      "matches": ["https://en.wikipedia.org/wiki/*"]
+    }
+  ]
+}
